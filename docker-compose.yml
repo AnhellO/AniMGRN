@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  # contenedor-a.
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    restart: always
+    env_file:
+      - '.env'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+      MONGO_INITDB_HOSTNAME: ${MONGO_HOSTNAME}
+      MONGO_INITDB_PORT: ${MONGO_PORT}
+    volumes:
+      - ./contenedor-a/mongo-volume:/data/db
+    ports:
+      - '27017:27017'
