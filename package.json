@@ -1,0 +1,45 @@
+{
+  "name": "animgrn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack serve --config ./contenedor-f/webpack.dev.js --watch",
+    "build:prod": "webpack --config ./contenedor-f/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudo-von/AniMGRN.git"
+  },
+  "keywords": [
+    "Anime",
+    "Mongo",
+    "Golang",
+    "React",
+    "Node",
+    "Webpack."
+  ],
+  "author": "sudo-von & AnhellO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudo-von/AniMGRN/issues"
+  },
+  "homepage": "https://github.com/sudo-von/AniMGRN#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
