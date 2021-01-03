@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack serve --config ./webpack.dev.js --watch",
-    "build:prod": "webpack --config ./webpack.prod.js"
+    "build:dev": "webpack serve --config ./contenedor-f/webpack.dev.js --watch",
+    "build:prod": "webpack --config ./contenedor-f/webpack.prod.js"
   },
   "repository": {
     "type": "git",
